@@ -14,6 +14,7 @@ class Testcontroller extends Controller
     public function index()
     {
         //
+        return view ("test1",["age"=>22]);
     }
 
     /**

@@ -22,3 +22,6 @@ Route::resource('product','ProductController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/login','LoginController@index')->name("viewLogin");
+Route::post('/login','LoginController@login')->name("login");
+Route::get('/logout','LoginController@logout');
